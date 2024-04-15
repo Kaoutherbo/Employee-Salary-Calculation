@@ -67,3 +67,4 @@ To run the program:
    ```
 
 The program will output the average salary of all employees in the business.
+<img src="./employee.png" width="100%" />
