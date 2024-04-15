@@ -1,11 +1,13 @@
-public class FixEmployee extends Employee{
-    double salary;
-    public FixEmployee(String name, double salary) {
+class FixEmployee extends Employee {
+    private double fixedSalary;
+
+    public FixEmployee(String name, double fixedSalary) {
         super(name);
-        this.salary = salary;
+        this.fixedSalary = fixedSalary;
     }
+
     @Override
     public double calculateSalary() {
-        return salary;
+        return fixedSalary;
     }
 }

@@ -1,16 +1,17 @@
-public class EmployeeCommission extends Employee{
-    double base_salary;
-    double sales; //vents
+class EmployeeCommission extends Employee {
+    double baseSalary;
+    double sales;
     double percentage;
-    public EmployeeCommission(String name, double base_salary, double sales, double percentage) {
+
+    public EmployeeCommission(String name, double baseSalary, double sales, double percentage) {
         super(name);
-        this.base_salary = base_salary;
+        this.baseSalary = baseSalary;
         this.sales = sales;
         this.percentage = percentage;
     }
 
     @Override
     public double calculateSalary() {
-        return this.percentage * this.sales + this.base_salary ;
+        return baseSalary + (sales * percentage);
     }
 }

@@ -1,4 +1,4 @@
-public class Business {
+class Business {
     public double average(Employee[] employees) {
         double totalSalary = 0;
 
